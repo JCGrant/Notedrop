@@ -52,6 +52,7 @@ export default class App extends React.Component {
           <MapView.Marker
             key={i}
             coordinate={note.coordinate}
+            image={require('./images/note-marker.png')}
           />
         ))}
       </MapView>
