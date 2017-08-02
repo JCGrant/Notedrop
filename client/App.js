@@ -45,6 +45,8 @@ export default class App extends React.Component {
         initialRegion={this.state.region}
         provider={'google'}
         customMapStyle={mapStyle}
+        showsUserLocation={true}
+        showsMyLocationButton={true}
       >
         {this.state.notes.map((note, i) => (
           <MapView.Marker
